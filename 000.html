@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/001.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jogo">
+        <div class="container">
+            <div class="scout">
+                <p>TOQ</p>
+                <button id="ba" class="btn acertou">00</button>
+                <button id="be" class="btn errou">00</button>
+            </div>
+            <div class="scout">
+                <p>MAN</p>
+                <button id="aa" class="btn acertou">00</button>
+                <button id="ae" class="btn errou">00</button>
+            </div>
+        </div>
+        <div class="container">
+            <button class="calcular">CALCULAR</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+var baixoacerto = document.querySelector('#ba');
+var baixoerro = document.querySelector('#be');
+var altoacerto = document.querySelector('#aa');
+var altoerro = document.querySelector('#ae');
+
+baixoacerto.addEventListener('click', function(){
+  var numero = parseInt(baixoacerto.textContent) + 1;
+  baixoacerto.textContent = numero;
+});
+
+baixoerro.addEventListener('click', function(){
+  var numero = parseInt(baixoerro.textContent) + 1;
+  baixoerro.textContent = numero;
+});
+
+altoacerto.addEventListener('click', function(){
+  var numero = parseInt(altoacerto.textContent) + 1;
+  altoacerto.textContent = numero;
+});
+
+altoerro.addEventListener('click', function(){
+  var numero = parseInt(altoerro.textContent) + 1;
+  altoerro.textContent = numero;
+});
+</script>

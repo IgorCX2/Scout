@@ -1,0 +1,139 @@
+@font-face{font-family:"TT Commons";src:url(../_fonts/TTCommonsBlack900.woff2) format("woff2");font-weight: 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"TT Commons";src:url(../_fonts/TTCommonsDemiBold600.woff2) format("woff2");font-weight: 600;font-style:normal;font-display:swap;}
+@font-face{font-family:"TT Commons";src:url(../_fonts/TTCommonsRegular400.woff2) format("woff2");font-weight: 400;font-style:normal;font-display:swap;}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #00D777;
+    font-family:"TT Commons",sans-serif;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    padding: 50px 0px;
+}
+.central{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    position: absolute;
+    gap: 30px;
+    flex-direction: column;
+    height: 100vh;
+    padding: 65px 40px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 50px 0px 0px;
+    display: none;
+    box-shadow: 0px 0px 70px 1px rgba(0, 0, 0, 0.1);
+}
+header ul li a{
+    font-size: 20px;
+    color: #00D777;
+    font-weight: 400;
+}
+header .menu-icon{
+    cursor: pointer;
+    display: block;
+}
+#control-nav{
+    display: none;
+}
+header .menu-icon div{
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+.fechar-position{
+    position: absolute;
+    right: 25px;
+    top: 50px;
+}
+.fechar-menu:nth-child(1){
+    transform: rotate(45deg) translate(7px, 7px);
+    background: #00D777;
+}  
+.fechar-menu:nth-child(2){
+    transform: rotate(-45deg) translate(0px, 0px);
+    background: #00D777;
+}
+#control-nav:checked ~ ul{
+    display: flex;
+}
+header a.btn{
+    color: #00D777;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+.jogo{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container div{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 3em;
+    margin-top: -15px;
+}
+.container div:nth-child(3){
+    font-size: 1.5em;
+    margin-top: 5px; 
+}
+.container div:nth-child(2) p:nth-child(2){
+    margin-top: 120px;
+    font-weight: 900;
+}
+.container div:nth-child(2) p:nth-child(1), .container div:nth-child(2) p:nth-child(3){
+    font-size: 3.5em;
+    font-weight: 600;
+}
+@media screen and (max-width: 542px){
+    .container{
+        max-width: 250px;
+    }
+    .container div:nth-child(2) p:nth-child(2){
+        margin-top: 75px;
+    }
+    .container div{
+        font-size: 2.5em;
+        
+    }
+    .container div:nth-child(3){
+        font-size: 1em;
+        margin-top: 0; 
+    }
+    .container div:nth-child(2) p:nth-child(1), .container div:nth-child(2) p:nth-child(3){
+        font-size: 3em;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,72 @@
+@font-face{font-family:"TT Commons";src:url(../_fonts/TTCommonsBold800.woff2) format("woff2");font-weight: 700;font-style:normal;font-display:swap;}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #00D777;
+    font-family:"TT Commons",sans-serif;
+    overflow: hidden;
+}
+.jogo{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    padding: 10px 25px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.container:nth-child(2){
+    margin-top: -10px;
+}
+.scout{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 25px;
+    height: 90px;
+    width: 90px;
+    border: none;
+}
+.btn.acertou{
+    background-color: #00BD68;
+}
+.btn.errou{
+    background-color: #DB373B;
+}
+.btn:active{
+    background-color: #818b87;
+}
+.scout p{
+    font-size: 3em;
+    color: #00D777;
+    font-weight: 700;
+}
+.calcular{
+    background-color: transparent;border: none;color: #00BD68;font-weight: 700;font-size: 16px;
+}
+@media screen and (max-width: 542px){
+    .container{
+        padding: 10px 1px;
+    }
+    .container:nth-child(2){
+        padding: 10px 25px;
+    }
+}
